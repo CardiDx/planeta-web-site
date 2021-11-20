@@ -1,0 +1,23 @@
+/*=============== ABOUT ===============*/
+
+.about__container {
+  display: flex;
+  flex-direction: row;
+}
+.about__image-wrapper {
+  width: 60%;
+}
+.about__image {
+  width: 100%;
+}
+.about__data {
+    width: 40%;
+  background-color: var(--background-color);
+  padding: 7rem 9.5rem 7rem 6rem;
+  color: var(--text-color-light);
+  font-size: 1.8rem;
+  line-height: 190%;
+}
+.about__title{
+    color: var(--text-color-light);
+}

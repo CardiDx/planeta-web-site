@@ -30,3 +30,4 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+node_modules

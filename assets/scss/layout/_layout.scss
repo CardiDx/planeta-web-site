@@ -1,0 +1,70 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section{
+    // padding: 4.5rem 0 2rem;
+
+    &__title{
+        font-size: var(--h2-font-size);
+        margin-bottom: var(--mb-2);
+        // text-align: center;
+    }
+}
+
+/*=============== LAYOUT ===============*/
+.container{
+    max-width: 1200px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+    height: auto;
+
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    flex-direction:row; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-hor-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-4 {
+    flex-basis: 33%;
+    max-width: 33%;
+}
+
+.col-4 {
+    flex-basis: 33%;
+    max-width: 33%;
+}
+
+
+.col-1 {
+    flex-basis: 8.33%;
+    max-width: 8.33%;
+}
+
+.main{
+    overflow: hidden; // For animation
+}
