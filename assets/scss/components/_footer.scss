@@ -116,6 +116,10 @@
   background-color: #415528;
   font-size: 1.6rem;
   color: #D9E5C9;
+  transition: 0.2s;
+  &:hover{
+    transition: 0.2s;
+  }
 }
 .footer__social-link-icon {
   width: 1.6rem;

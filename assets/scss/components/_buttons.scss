@@ -46,11 +46,13 @@
   height: 6rem;
   text-align: center;
   line-height: 6rem;
-  background-color: var(--body-color);
+  background-color: #F8F9EA;
+  margin-right: 2rem;
   svg {
     width: 18px;
     height: 18px;
     position: relative;
     left: 3px;
+    top: 3px;
   }
 }
