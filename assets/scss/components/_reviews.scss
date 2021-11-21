@@ -1,0 +1,29 @@
+/*=============== NEWSLETTER ===============*/
+.reviews{
+    padding: 13rem 0 10.8rem 0;
+}
+.reviews__title{
+    margin-bottom: 6.5rem;
+}
+.reviews__wrapper-video {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -2.1rem;
+}
+
+.review__video {
+  width: 50%;
+  position: relative;
+  margin: 0 2.1rem;
+  img {
+    width: 100%;
+  }
+}
+
+.review__button-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
