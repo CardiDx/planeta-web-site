@@ -1,0 +1,62 @@
+/*=============== NEW ARRIVALS ===============*/
+.steps {
+  padding: 13.5rem 0 3rem 0;
+}
+
+.steps__card-wrapper:last-child .steps__content {
+  background-color: transparent;
+  display: block;
+}
+.steps__content {
+  background-color: var(--card-background);
+  //   padding: 2.8rem 2.8rem 2.6rem 2.8rem;
+  padding: 2.8rem 2.8rem 0 2.8rem;
+  min-height: 23.6rem;
+  position: relative;
+  height: 100%;
+}
+
+.steps__cards {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 -2rem;
+  @include bp-md {
+    flex-flow: row wrap;
+  }
+}
+.steps__card-wrapper {
+  padding: 1.7rem 2rem;
+}
+
+.steps__number {
+  font-size: 5rem;
+  line-height: 155%;
+  text-align: right;
+}
+.steps__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.steps__content-description {
+  font-size: 1.2rem;
+  line-height: 190%;
+  @include bp-md {
+    font-size: 1.8rem;
+  }
+}
+.steps__card-wrapper:nth-child(-n + 3) .steps__number {
+  color: #70bc12;
+}
+
+.steps__card-wrapper:nth-child(n + 4):nth-child(-n + 6) .steps__number {
+  color: #e4a13d;
+}
+
+.steps__card-wrapper:nth-child(n + 7):nth-child(-n + 8) .steps__number {
+  color: #60a2de;
+}
+
+.steps__content-button {
+  margin-top: 6rem;
+}

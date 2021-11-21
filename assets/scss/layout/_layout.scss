@@ -31,7 +31,7 @@
   display: flex;
 }
 
-.tx-center{
+.tx-center {
   text-align: center;
 }
 
@@ -67,8 +67,16 @@
 }
 
 .col-4 {
-  flex-basis: 33%;
-  max-width: 33%;
+  flex-basis: 100%;
+  max-width: 100%;
+  @include bp-xs{
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  @include bp-md {
+    flex-basis: 33.3333%;
+    max-width: 33.3333%;
+  }
 }
 
 .col-1 {
