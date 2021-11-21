@@ -31,6 +31,10 @@
   display: flex;
 }
 
+.tx-center{
+  text-align: center;
+}
+
 .flex-hor-center {
   display: flex;
   flex-direction: row;
@@ -44,7 +48,6 @@
 }
 
 .col-6 {
-    
   flex-basis: 100%;
   max-width: 100%;
 
@@ -52,7 +55,15 @@
     flex-basis: 50%;
     max-width: 50%;
   }
+}
 
+.col-5 {
+  flex-basis: 100%;
+  max-width: 100%;
+  @include bp-md {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
 }
 
 .col-4 {
