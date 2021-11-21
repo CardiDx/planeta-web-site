@@ -1,0 +1,43 @@
+@mixin trans($property) {
+	transition: $property .35s ease;
+}
+
+
+@mixin bp-xs {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+// 768px
+@mixin bp-sm {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+//992px
+@mixin bp-md {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin bp-lg {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+//1330px
+@mixin bp-xl {
+  @media only screen and (min-width: 1480px) {
+    @content;
+  }
+}
+
+@mixin bp-custom ($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}

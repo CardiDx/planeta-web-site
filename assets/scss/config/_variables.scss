@@ -1,73 +1,65 @@
 /*=============== GOOGLE FONTS ===============*/
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
-:root{
-    --header-height: 3.5rem;
+:root {
+  --header-height: 3.5rem;
 
-    /*========== Colors ==========*/
-    --hue: 14;
+  /*========== Colors ==========*/
+  --hue: 14;
 
-    --first-color: hsl(var(--hue), 91%, 54%);
-    --first-color-alt: #EEEFE0;
-    --title-color: #1C1C1C;
-    --text-color: hsl(var(--hue), 4%, 85%);
-    --text-color-light: #FFFAF6;
-    --background-color: #283715;
+  --first-color: hsl(var(--hue), 91%, 54%);
+  --first-color-alt: #eeefe0;
+  --title-color: #1c1c1c;
+  --text-color: #1c1c1c;
+  --text-color-light: #fffaf6;
+  --background-color: #283715;
+  --accent-text: #4f5339;
 
-    /* Green gradient */
-    --body-color: #FEFFF2;;
-    --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%);
+  --white: #fff;
 
-    /* Red gradient */
-    // --body-color: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
-    // --container-color: linear-gradient(136deg, hsl(360, 28%, 35%) 0%, hsl(18, 28%, 35%) 100%);
+  /*========== Font and typography ==========*/
+  --body-font: "Montserrat", sans-serif;
+  --title-font: "Montserrat Alternates", sans-serif;
 
-    /* Black solid */
-    // --body-color: hsl(30, 8%, 8%);
-    // --container-color: hsl(30, 8%, 10%);
+  --biggest-font-size: 6rem;
+  --h1-font-size: 6rem;
+  --h2-font-size: 1.6rem;
+  --h3-font-size: 1.6rem;
+  --normal-font-size: 1.2rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
-    /*========== Font and typography ==========*/
-    --body-font: 'Montserrat', sans-serif;
-    --title-font: 'Montserrat Alternates', sans-serif;
-    
+  // Desktop typography
+  @media screen and (min-width: 992px) {
     --biggest-font-size: 6rem;
-    // --h1-font-size: 6.0rem;
+    --h1-font-size: 2.25rem;
     --h2-font-size: 3.5rem;
-    --h3-font-size: 1.6rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1.8rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 
-    // Desktop typography
-    @media screen and (min-width: 992px){
-        --biggest-font-size: 6rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 3.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
-    }
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-black: 900;
 
-    /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-semi-bold: 600;
-    --font-black: 900;
+  /*========== Margenes Bottom ==========*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-1-6: 1.6rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-4-0: 4rem;
 
-    /*========== Margenes Bottom ==========*/
-    --mb-0-25: .25rem;
-    --mb-0-5: .5rem;
-    --mb-0-75: .75rem;
-    --mb-1: 1rem;
-    --mb-1-6: 1.6rem;
-    --mb-2: 2rem;
-    --mb-2-5: 2.5rem;
-    --mb-4-0: 4rem;
-
-    /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }

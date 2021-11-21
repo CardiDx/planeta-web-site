@@ -1,9 +1,24 @@
 /*=============== ABOUT ===============*/
 
+.about-me{
+  padding: 6rem 0;
+}
+
 .about__container {
   display: flex;
   flex-direction: row;
 }
+
+.about-me__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include bp-md {
+    flex-direction: row;
+  }
+}
+
 .about__image-wrapper {
   width: 60%;
 }
@@ -11,13 +26,39 @@
   width: 100%;
 }
 .about__data {
-    width: 40%;
+  width: 40%;
   background-color: var(--background-color);
   padding: 7rem 9.5rem 7rem 6rem;
   color: var(--text-color-light);
   font-size: 1.8rem;
   line-height: 190%;
 }
-.about__title{
-    color: var(--text-color-light);
+.about__title {
+  color: var(--text-color-light);
+}
+
+.about-me__text {
+
+  max-width: 24rem;
+}
+.about-me__name {
+  margin-bottom: 0.4rem;
+  font-size: 1.5rem;
+  line-height: 155%;
+  font-weight: var(--font-medium);
+}
+.about-me__industry {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 155%;
+  color: var(--accent-text);
+}
+
+.about-me__message {
+  line-height: 190%;
+
+}
+.about-me__wrapper-image {
+  max-width: 21rem;
+  margin: 2.4rem 0 3rem 0;
 }

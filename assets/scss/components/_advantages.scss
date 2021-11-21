@@ -1,0 +1,11 @@
+.advantages__content {
+  margin-bottom: 4.6rem;
+  color: var(--text-color);
+}
+
+.advantages__title {
+  margin-bottom: 4rem;
+  @include bp-md {
+    margin-bottom: 8rem;
+  }
+}
