@@ -1,12 +1,11 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   // padding: 4.5rem 0 2rem;
+}
 
-  &__title {
-    font-size: var(--h2-font-size);
-    margin-bottom: var(--mb-2);
-    // text-align: center;
-  }
+.section__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-2);
 }
 
 /*=============== LAYOUT ===============*/
@@ -15,6 +14,13 @@
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
   height: auto;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 }
 
 .row {

@@ -1,5 +1,5 @@
 /*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu'),
+const navContainer = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
@@ -7,9 +7,24 @@ const navMenu = document.getElementById('nav-menu'),
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
+        navContainer.classList.toggle('show-menu')
+        navToggle.classList.toggle('mobile')
     })
 }
+
+
+//Mobile Navigation
+// var headerMenu = document.querySelector('.menu');
+// var mobileMenu = document.querySelector('.menu-burger');
+// var bodyFixed = document.body;
+
+// mobileMenu.onclick = function () {
+//     headerMenu.classList.toggle('open');
+//     mobileMenu.classList.toggle('mobile');
+//     bodyFixed.classList.toggle('body-fixed');
+// };
+
+
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
