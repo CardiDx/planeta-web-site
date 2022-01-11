@@ -9,14 +9,14 @@
   padding: 7rem 0 10.7rem 0;
   //   width: 60%;
   width: 100%;
-  background-color: #383B0C;
+  background-color: var(--background-color);
 }
 .info__content-text {
-  color: var(--white);
+  color: var(--text-color);
   padding: 7rem 0 10.4rem 0;
 }
 .info__title {
-  color: var(--white);
+  color: var(--text-color);
 }
 .info__description {
   line-height: 190%;

@@ -1,616 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== BOXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="css/style.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
-    <title>Responsive Halloween Website</title>
-  </head>
-  <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <div class="container">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Остров Шри-Ланка в 2021-2022</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <div class="container">
+
       <nav class="nav" id="nav-menu">
-
-        <div class="nav-left">
-        <a href="#" class="nav__logo">lankaplanet </a>
-
-        <div class="nav__menu" >
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Главная</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#about" class="nav__link">Аренда</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#trick" class="nav__link">Блог</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#new" class="nav__link">Услуги</a>
-            </li>
-
-            <li class="nav__item nav__item-hidden">
-              <a href="#new" class="nav__link">Магазин</a>
-            </li>
-
-            <li class="nav__item nav__item-hidden">
-              <a href="#new" class="nav__link">Контакты</a>
-            </li>
-
-            <!-- <a href="#" class="button button--ghost">Support</a> -->
-          </ul>
-
-        </div>
-
-        
+        <div class="nav__main">
+          <a href="/" class="nav__logo">lankaplanet</a>
+          <div class="nav__menu">
+            <ul class="nav__list-item">
+              <li class="nav__item">
+                <a href="#home" class="nav__item-link active-link">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a href="https://lankaplanet.ru/house" class="nav__item-link">Аренда</a>
+              </li>
+              <li class="nav__item">
+                <a href="https://lankaplanet.ru/blog" class="nav__item-link">Блог</a>
+              </li>
+              <li class="nav__item">
+                <a href="https://lankaplanet.ru/services" class="nav__item-link">Услуги</a>
+              </li>
+              <li class="nav__item nav__item--hidden">
+                <a href="https://lankaplanet.ru/shop" class="nav__item-link">Магазин</a>
+              </li>
+              <li class="nav__item nav__item--hidden">
+                <a href="https://lankaplanet.ru/contact" class="nav__item-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="nav__toggle" id="nav-toggle">
           <span></span>
           <span></span>
           <span></span>
         </div>
-      </nav></div>
+      </nav>
+    </div>
 
-    </header>
+  </header>
 
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home flex" id="home">
-        <!-- <div class="container"> -->
-        <!-- HOME SLIDER 1 -->
+  <main class="main">
+    <section class="home" id="home">
+      <div class="home__content container">
+        <div class="home__data">
+          <h1 class="home__data-title">Вас ждёт дом на Шри-Ланке</h1>
+          <p class="home__data-description">Консультация эксперта по аренде недвижимости</p>
 
-        <div class="home__content container">
-          <div class="home__data">
-            <h1 class="home__title">Вас ждёт дом на Шри-Ланке</h1>
-            <p class="home__description">
-              Консультация эксперта по аренде недвижимости
-            </p>
-
-            <div class="home__buttons">
-              <a href="#" class="button">Выбрать дом</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="home__group">
-          <img src="/img/home-bitch-and-sea.jpg" alt="" class="home__img" />
-        </div>
-
-        <!-- </div> -->
-
-        <!-- HOME SLIDER 2 -->
-        <!-- <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="/img/home2-img.png" alt="" class="home__img">
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">Adino & Grahami</h4>
-                                        <span class="home__details-subtitle">No words can describe them</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#2 top Best duo</h3>
-                                    <h1 class="home__title">BRING BACK <br> MY COTTON <br> CANDY</h1>
-                                    <p class="home__description">Adino steals cotton candy from his brother and eats them all in one bite, 
-                                        a hungry beast. Grahami can no longer contain his anger towards Adino.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Book Now</a>
-                                        <a href="#" class="button--link button--flex">Track Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section> -->
-
-        <!-- HOME SLIDER 3 -->
-        <!-- <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="/img/home3-img.png" alt="" class="home__img">
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">Captain Sem</h4>
-                                        <span class="home__details-subtitle">Veteran Spooky Ghost</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#3 Top Scariest  Ghost</h3>
-                                    <h1 class="home__title">RESPAWN <br> THE SPOOKY <br> SKULL</h1>
-                                    <p class="home__description">In search for cute little puppy, Captain Sem has come back from his tragic death. 
-                                        With his hogwarts certified power he promise to be a hero for all of ghostkind.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Book Now</a>
-                                        <a href="#" class="button--link button--flex">Track Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section> -->
-
-        <!-- <div class="swiper-pagination"></div> -->
-      </section>
-
-      <!--==================== CATEGORY ====================-->
-      <!-- <section class="section category">
-
-       
-        <h2 class="section__title">
-          Favorite Scare <br />
-          Category
-        </h2>
-
-        <div class="category__container container grid">
-          <div class="category__data">
-            <img src="/img/category1-img.png" alt="" class="category__img" />
-            <h3 class="category__title">Ghosts</h3>
-            <p class="category__description">
-              Choose the ghosts, the scariest there are.
-            </p>
-          </div>
-
-          <div class="category__data">
-            <img src="/img/category2-img.png" alt="" class="category__img" />
-            <h3 class="category__title">Pumpkins</h3>
-            <p class="category__description">
-              You look at the scariest pumpkins there is.
-            </p>
-          </div>
-
-          <div class="category__data">
-            <img src="/img/category3-img.png" alt="" class="category__img" />
-            <h3 class="category__title">Witch Hat</h3>
-            <p class="category__description">
-              Pick the most stylish witch hats out there.
-            </p>
-          </div>
-        </div>
-      </section> -->
-
-      <!--==================== ABOUT ====================-->
-      <section class="section about" id="about">
-        <div class="about__container">
-          <div class="about__image-wrapper">
-            <img
-              class="about__image"
-              src="img/relaxing-hotel.jpg"
-              alt="relaxing hotel"
-            />
-          </div>
-
-          <div class="about__data">
-            <h2 class="section__title about__title">О визе</h2>
-            <p class="about__description">
-              Удобнее всего подать заявление на ETA онлайн. Для оформления
-              документа не придется ехать в Москву или какой-либо другой город.
-              Сделать это можно, не выходя из дома, потребуется только
-              подключение к интернету. Удобнее всего подать заявление на ETA
-              онлайн...далее
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== TRICK OR TREAT ====================-->
-      <section class="section advantages" id="advantages">
-        <img
-          class="advantages__decorate decorate-left"
-          src="img/leaves-palms.png"
-          alt=""
-        />
-        <img
-          class="advantages__decorate decorate-bottom"
-          src="img/leaves-palms-bottom.png"
-          alt=""
-        />
-
-        <div class="advantages__container container">
-          <h2 class="section__title advantages__title tx-center">
-            Преимущества
-          </h2>
-
-          <div class="advantages__content-wrapper row">
-            <div class="col-5">
-              <div class="advantages__content">
-                <div class="advantages__content-title">
-                  Подберем жилье под ваш запрос
-                </div>
-                <p class="advantages__content-description">
-                  Учтем все ваши пожелания по место-расположению, интерьеру и
-                  бюджету; перед заселением, лично проверим, соответствует ли
-                  реальность картинке.
-                </p>
-              </div>
-
-              <div class="advantages__content">
-                <div class="advantages__content-title">
-                  Реализуем ваши пожелания
-                </div>
-                <p class="advantages__content-description">
-                  Привезем арендованный скутер или машину прямо к вашему дому;
-                  подберем и забронируем для вас место на экскурсию по вашему
-                  звонку; предоставим вам уборщицу или няню.
-                </p>
-              </div>
-
-              <div class="advantages__content">
-                <div class="advantages__content-title">
-                  Поможем быстро адаптироваться
-                </div>
-                <p class="advantages__content-description">
-                  Подскажем, где находятся вкусные и недорогие кафешки, ландри и
-                  магазины; скинем локации лучших пляжей в округе.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-5">
-              <div class="advantages__content reverse-dot-color">
-                <div class="advantages__content-title">
-                  Сопроводим от обращения до отъезда
-                </div>
-                <p class="advantages__content-description">
-                  Будем на связи 24/7, предоставим трансфер из/в аэропорт по
-                  сниженной стоимости, поможем решить все вопросы по жилью и
-                  наладить коммуникацию с хозяевами.
-                </p>
-              </div>
-
-              <div class="advantages__content reverse-dot-color">
-                <div class="advantages__content-title">Работаем официально</div>
-                <p class="advantages__content-description">
-                  Мы — местная зарегистрированная компания, поэтому знаем всё об
-                  острове и предоставим вам комфортные условия дешевле, чем на
-                  букинге. Вы можете быть спокойны.
-                </p>
-              </div>
-
-              <div class="advantages__content reverse-dot-color tx-center">
-                <a href="#" class="button">Бесплатная консультация</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== DISCOUNT ====================-->
-      <section class="section info">
-        <div class="video__container">
-          <div class="info__content">
-            <div class="container">
-              <div class="info__content-text col-6">
-                <h2 class="info__title">Всё о Шри-Ланке</h2>
-                <p class="info__description">
-                  Шри-Ланка это маленький остров на юге Индостана. На этом
-                  острове располагается одноименная страна Шри-Ланка. Она яркая,
-                  харизматичная и невероятно интересная для туризма. Шри- Ланка
-                  никого не оставляет равнодушным...далее
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="info__video">
-            <!-- <img class="info__video-preview" src="/img/director.jpg" alt="" class="discount__img" /> -->
-            <a href="#" class="info__video-link">
-              <div class="button-circle">
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 14 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M14 8L0.5 0.205772V15.7942L14 8Z" fill="#383B0C" />
-                </svg>
-              </div>
-              Смотреть<br />видео</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!--==================== NEW ARRIVALS ====================-->
-      <section class="section steps" id="steps">
-        <div class="steps__container container">
-          <h2 class="section__title tx-center">Этапы работы</h2>
-
-          <div class="steps__cards">
-            <div class="col-4 steps__card-wrapper">
-              <div class="steps__content">
-                <p class="steps__content-description">
-                  Проводится бриф по запросу на дом: даты, когда вам нужно
-                  жилье; количество спален; ваш бюджет и по другим критериям
-                </p>
-                <div class="steps__number">01</div>
-              </div>
-            </div>
-
-            <div class="col-4 steps__card-wrapper">
-              <div class="steps__content">
-                <p class="steps__content-description">
-                  В личном чате я предлагаю вам варианты, которые будут
-                  соответствовать пожеланиям
-                </p>
-                <div class="steps__number">02</div>
-              </div>
-            </div>
-
-            <div class="col-4 steps__card-wrapper">
-              <div class="steps__content">
-                <p class="steps__content-description">
-                  Вы выбираете дом, я - отвечаю на вопросы для утверждения
-                  аренды недвижимости
-                </p>
-                <div class="steps__number">03</div>
-              </div>
-            </div>
-
-            <div class="col-4 steps__card-wrapper">
-              <div class="steps__content">
-                <p class="steps__content-description">
-                  Вы получаете расчёт стоимости брони вашего будущего места-
-                  жительства. По желанию мы составляем договор
-                </p>
-                <div class="steps__number">04</div>
-              </div>
-            </div>
-
-            <div class="col-4 steps__card-wrapper">
-              <div class="steps__content">
-                <p class="steps__content-description">
-                  Оплачиваете бронь в размере 20-30% от общей стоимости
-                </p>
-                <div class="steps__number">05</div>
-              </div>
-            </div>
-
-            <div class="col-4 steps__card-wrapper">
-              <div class="steps__content">
-                <p class="steps__content-description">
-                  Вы можете заказать у нас трансфер до вашего жилья. С нашим
-                  водителем вы точно найдете дорогу на Шри-Ланке
-                </p>
-                <div class="steps__number">06</div>
-              </div>
-            </div>
-
-            <div class="col-4 steps__card-wrapper">
-              <div class="steps__content">
-                <p class="steps__content-description">
-                  По приезду вы осматриваетесь, заселяетесь и оплачиваете
-                  оставшиеся 70-80% аренды жилья
-                </p>
-                <div class="steps__number">07</div>
-              </div>
-            </div>
-
-            <div class="col-4 steps__card-wrapper">
-              <div class="steps__content">
-                <p class="steps__content-description">
-                  В любое время мы на связи, чтобы вам помочь по всем вопросам
-                  связанным с вашим пребыванием на Шри-Ланке
-                </p>
-                <div class="steps__number">08</div>
-              </div>
-            </div>
-
-            <div class="col-4 steps__card-wrapper">
-              <div class="steps__content">
-                <p class="steps__content-description">
-                  Здесь вы найдете дом для жизни на Шри-Ланке с комфортом
-                </p>
-                <a href="#" class="button steps__content-button">Выбрать дом</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== OUR NEWSLETTER ====================-->
-      <section class="section reviews">
-        <div class="reviews__container container">
-          <h2 class="section__title reviews__title tx-center">
-            Видео-отзывы от моих клиентов
-          </h2>
-        </div>
-        <div class="reviews__wrapper-video">
-          <a href="#" class="review__video">
-            <img src="img/review-1.jpg" alt="" />
-
-            <div class="button-circle review__button-play">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 14 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M14 8L0.5 0.205772V15.7942L14 8Z" fill="#383B0C" />
-              </svg>
-            </div>
-          </a>
-
-          <a href="#" class="review__video">
-            <img src="img/review-2.jpg" alt="" />
-
-            <div class="button-circle review__button-play">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 14 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M14 8L0.5 0.205772V15.7942L14 8Z" fill="#383B0C" />
-              </svg>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <section class="section about-me">
-        <div class="about-me__container container">
-          <div class="about-me__content">
-            <div class="about-me__content-text">
-              <h2 class="section__title">Обо мне</h2>
-
-              <div class="about-me__text">
-                <div class="about-me__name">Виктория Планеттэр</div>
-                <div class="about-me__industry">
-                  Эксперт по аренде недвижимости
-                </div>
-                <div class="about-me__message">
-                  <p>
-                    Рада вас видеть! <br />
-                    Я живу на острове Цейлоне с января 2015 года и&nbsp;знаю все
-                    нюансы при выборе жилья, поэтому можете довериться мне
-                    <br />
-                    Честные обзоры на Youtube
-                  </p>
-                </div>
-              </div>
-
-              <a href="#" class="button">Бесплатная консультация</a>
-            </div>
-            <div class="about-me__wrapper-image">
-              <img
-                class="about-me__img"
-                src="img/victoria-with-husband.jpg"
-                alt="victoria-with-husband"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section">
-      <div class="footer__container container">
-        <div class="footer__content">
-          <a href="#" class="footer__logo">lankaplanet</a>
-        </div>
-
-        <div class="footer__content">
-          <div class="footer__title">Меню</div>
-
-          <ul class="footer__links">
-            <li>
-              <a href="#" class="footer__link">Главная</a>
-            </li>
-            <li>
-              <a href="#" class="footer__link">Аренда</a>
-            </li>
-            <li>
-              <a href="#" class="footer__link">Блог</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__content">
-          <ul class="footer__links">
-            <li>
-              <a href="#" class="footer__link">Продажа домов</a>
-            </li>
-            <li>
-              <a href="#" class="footer__link">Услуги</a>
-            </li>
-            <li>
-              <a href="#" class="footer__link">Магазин</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer__link">Контакты</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="">
-          <a href="tel:+94763081200" class="section__title footer__phone"
-            >+94 76 308 12 00</a
-          >
-          <div class="footer__social">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              class="footer__social-link"
-            >
-              <i class="bx bxl-telegram"></i>
-            </a>
-
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              class="footer__social-link"
-            >
-              <i class="bx bxs-phone"></i>
-            </a>
-
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              class="footer__social-link"
-            >
-              <i class="bx bxl-whatsapp"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              class="footer__social-link"
-            >
-              <i class="bx bxl-instagram-alt"></i>
-            </a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              class="footer__social-link"
-            >
-              <i class="bx bxl-youtube"></i>
-            </a>
+          <div class="home__buttons">
+            <a href="#" class="button">Выбрать дом</a>
           </div>
         </div>
       </div>
-      <span class="footer__copy">&#169; Все права защищены</span>
-    </footer>
 
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
-    </a>
+      <div class="home__group">
+        <img src="/img/home-bitch-and-sea.jpg" alt="" class="home__img" />
+      </div>
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="js/scrollreveal.min.js"></script>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="js/swiper-bundle.min.js"></script>
+    </section>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="js/main.min.js"></script>
-  </body>
+    <section class="section about" id="about">
+      <div class="about__container">
+        <div class="about__image-wrapper">
+          <img class="about__image" src="img/relaxing-hotel.jpg" alt="relaxing hotel" />
+        </div>
+
+        <div class="about__data">
+          <h2 class="section__title about__title">О визе</h2>
+          <p class="about__description">
+            Удобнее всего подать заявление на ETA онлайн. Для оформления
+            документа не придется ехать в Москву или какой-либо другой город.
+            Сделать это можно, не выходя из дома, потребуется только
+            подключение к интернету. Удобнее всего подать заявление на ETA
+            онлайн...далее
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== TRICK OR TREAT ====================-->
+    <section class="section advantages" id="advantages">
+      <img class="advantages__decorate decorate-left" src="img/leaves-palms.png" alt="" />
+      <img class="advantages__decorate decorate-bottom" src="img/leaves-palms-bottom.png" alt="" />
+
+      <div class="advantages__container container">
+        <h2 class="section__title advantages__title tx-center">
+          Преимущества
+        </h2>
+
+        <div class="advantages__content-wrapper row">
+          <div class="col-5">
+            <div class="advantages__content">
+              <div class="advantages__content-title">
+                Подберем жилье под ваш запрос
+              </div>
+              <p class="advantages__content-description">
+                Учтем все ваши пожелания по место-расположению, интерьеру и
+                бюджету; перед заселением, лично проверим, соответствует ли
+                реальность картинке.
+              </p>
+            </div>
+
+            <div class="advantages__content">
+              <div class="advantages__content-title">
+                Реализуем ваши пожелания
+              </div>
+              <p class="advantages__content-description">
+                Привезем арендованный скутер или машину прямо к вашему дому;
+                подберем и забронируем для вас место на экскурсию по вашему
+                звонку; предоставим вам уборщицу или няню.
+              </p>
+            </div>
+
+
+          </div>
+
+          <div class="col-5">
+            <div class="advantages__content reverse-dot-color">
+              <div class="advantages__content-title">
+                Сопроводим от обращения до отъезда
+              </div>
+              <p class="advantages__content-description">
+                Будем на связи 24/7, предоставим трансфер из/в аэропорт по
+                сниженной стоимости, поможем решить все вопросы по жилью и
+                наладить коммуникацию с хозяевами.
+              </p>
+            </div>
+
+            <div class="advantages__content">
+              <div class="advantages__content-title">
+                Поможем быстро адаптироваться
+              </div>
+              <p class="advantages__content-description">
+                Подскажем, где находятся вкусные и недорогие кафешки, ландри и
+                магазины; скинем локации лучших пляжей в округе.
+              </p>
+            </div>
+          </div>
+
+
+          <a href="#" class="advantages__button button">Бесплатная консультация</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== DISCOUNT ====================-->
+    <section class="section info">
+      <div class="video__container">
+        <div class="info__content">
+          <div class="container">
+            <div class="info__content-text col-6">
+              <h2 class="info__title">Всё о Шри-Ланке</h2>
+              <p class="info__description">
+                Шри-Ланка это маленький остров на юге Индостана. На этом
+                острове располагается одноименная страна Шри-Ланка. Она яркая,
+                харизматичная и невероятно интересная для туризма. Шри- Ланка
+                никого не оставляет равнодушным...далее
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info__video">
+          <!-- <img class="info__video-preview" src="/img/director.jpg" alt="" class="discount__img" /> -->
+          <a href="#" class="info__video-link">
+            <div class="button-circle">
+              <svg width="18" height="18" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 8L0.5 0.205772V15.7942L14 8Z" fill="#383B0C" />
+              </svg>
+            </div>
+            Смотреть<br />видео
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== NEW ARRIVALS ====================-->
+    <section class="section steps" id="steps">
+      <div class="steps__container container">
+        <h2 class="section__title tx-center">Этапы работы</h2>
+
+        <div class="steps__cards">
+          <div class="col-4 steps__card-wrapper">
+            <div class="steps__content">
+              <p class="steps__content-description">
+                Проводится бриф по запросу на дом: даты, когда вам нужно
+                жилье; количество спален; ваш бюджет и по другим критериям
+              </p>
+              <div class="steps__number">01</div>
+            </div>
+          </div>
+
+          <div class="col-4 steps__card-wrapper">
+            <div class="steps__content">
+              <p class="steps__content-description">
+                В личном чате я предлагаю вам варианты, которые будут
+                соответствовать пожеланиям
+              </p>
+              <div class="steps__number">02</div>
+            </div>
+          </div>
+
+          <div class="col-4 steps__card-wrapper">
+            <div class="steps__content">
+              <p class="steps__content-description">
+                Вы выбираете дом, я - отвечаю на вопросы для утверждения
+                аренды недвижимости
+              </p>
+              <div class="steps__number">03</div>
+            </div>
+          </div>
+
+          <div class="col-4 steps__card-wrapper">
+            <div class="steps__content">
+              <p class="steps__content-description">
+                Вы получаете расчёт стоимости брони вашего будущего места-
+                жительства. По желанию мы составляем договор
+              </p>
+              <div class="steps__number">04</div>
+            </div>
+          </div>
+
+          <div class="col-4 steps__card-wrapper">
+            <div class="steps__content">
+              <p class="steps__content-description">
+                Оплачиваете бронь в размере 20-30% от общей стоимости
+              </p>
+              <div class="steps__number">05</div>
+            </div>
+          </div>
+
+          <div class="col-4 steps__card-wrapper">
+            <div class="steps__content">
+              <p class="steps__content-description">
+                Вы можете заказать у нас трансфер до вашего жилья. С нашим
+                водителем вы точно найдете дорогу на Шри-Ланке
+              </p>
+              <div class="steps__number">06</div>
+            </div>
+          </div>
+
+          <div class="col-4 steps__card-wrapper">
+            <div class="steps__content">
+              <p class="steps__content-description">
+                По приезду вы осматриваетесь, заселяетесь и оплачиваете
+                оставшиеся 70-80% аренды жилья
+              </p>
+              <div class="steps__number">07</div>
+            </div>
+          </div>
+
+          <div class="col-4 steps__card-wrapper">
+            <div class="steps__content">
+              <p class="steps__content-description">
+                В любое время мы на связи, чтобы вам помочь по всем вопросам
+                связанным с вашим пребыванием на Шри-Ланке
+              </p>
+              <div class="steps__number">08</div>
+            </div>
+          </div>
+
+          <div class="col-4 steps__card-wrapper">
+            <div class="steps__content">
+              <p class="steps__content-description">
+                Здесь вы найдете дом для жизни на Шри-Ланке с комфортом
+              </p>
+              <a href="#" class="button steps__content-button">Выбрать дом</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== OUR NEWSLETTER ====================-->
+    <section class="section reviews">
+      <div class="reviews__container container">
+        <h2 class="section__title reviews__title tx-center">
+          Видео-отзывы от моих клиентов
+        </h2>
+      </div>
+      <div class="reviews__wrapper-video">
+        <a href="#" class="review__video">
+          <img src="img/review-1.jpg" alt="" />
+
+          <div class="button-circle review__button-play">
+            <svg width="18" height="18" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 8L0.5 0.205772V15.7942L14 8Z" fill="#383B0C" />
+            </svg>
+          </div>
+        </a>
+
+        <a href="#" class="review__video">
+          <img src="img/review-2.jpg" alt="" />
+
+          <div class="button-circle review__button-play">
+            <svg width="18" height="18" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 8L0.5 0.205772V15.7942L14 8Z" fill="#383B0C" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section about-me">
+      <div class="about-me__container container">
+        <div class="about-me__content">
+          <div class="about-me__content-text">
+            <h2 class="section__title">Обо мне</h2>
+
+            <div class="about-me__text">
+              <div class="about-me__name">Виктория Планеттэр</div>
+              <div class="about-me__industry">
+                Эксперт по аренде недвижимости
+              </div>
+              <div class="about-me__message">
+                <p>
+                  Рада вас видеть! <br />
+                  Я живу на острове Цейлоне с января 2015 года и&nbsp;знаю все
+                  нюансы при выборе жилья, поэтому можете довериться мне
+                  <br />
+                  Честные обзоры на Youtube
+                </p>
+              </div>
+            </div>
+
+            <a href="#" class="button">Бесплатная консультация</a>
+          </div>
+          <div class="about-me__wrapper-image">
+            <img class="about-me__img" src="img/victoria-with-husband.jpg" alt="victoria-with-husband" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+    <div class="footer__container container">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">lankaplanet</a>
+      </div>
+
+      <div class="footer__content">
+        <div class="footer__title">Меню</div>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Главная</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Аренда</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Блог</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Продажа домов</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Услуги</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Магазин</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="">
+        <a href="tel:+94763081200" class="section__title footer__phone">+94 76 308 12 00</a>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-telegram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxs-phone"></i>
+          </a>
+
+          <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <span class="footer__copy">&#169; Все права защищены</span>
+  </footer>
+
+  <!--=============== SCROLL UP ===============-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <img src="/assets/img/arrow-up.svg" alt="">
+  </a>
+
+  <!--=============== SCROLL REVEAL ===============-->
+  <script src="js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
