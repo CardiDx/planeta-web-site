@@ -1,6 +1,10 @@
 /*=============== NEW ARRIVALS ===============*/
 .steps {
-  padding: 13.5rem 0 3rem 0;
+  padding: 4rem 0;
+
+  @include bp-md {
+    padding: 13.5rem 0 3rem 0;
+  }
 }
 
 .steps__card-wrapper:last-child .steps__content {
@@ -11,9 +15,13 @@
   background-color: #f9f9f9;
   //   padding: 2.8rem 2.8rem 2.6rem 2.8rem;
   padding: 2.8rem 2.8rem 0 2.8rem;
-  min-height: 23.6rem;
+  min-height: 17rem;
   position: relative;
   height: 100%;
+
+  @include bp-md {
+    min-height: 23.6rem;
+  }
 }
 
 .steps__cards {
@@ -25,14 +33,23 @@
   }
 }
 .steps__card-wrapper {
-  padding: 1.7rem 2rem;
+  padding: 1rem 2rem;
+
+  @include bp-md {
+    padding: 1.7rem 2rem;
+  }
 }
 
 .steps__number {
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 155%;
   text-align: right;
+
+  @include bp-md {
+    font-size: 5rem;
+  }
 }
+
 .steps__content {
   display: flex;
   flex-direction: column;
@@ -58,5 +75,9 @@
 }
 
 .steps__content-button {
-  margin-top: 6rem;
+  margin-top: 2.4rem;
+
+  @include bp-md {
+    margin-top: 6rem;
+  }
 }

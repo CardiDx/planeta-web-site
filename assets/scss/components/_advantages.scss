@@ -4,10 +4,17 @@
   // overflow: hidden;
 }
 .advantages__decorate {
+  width: 12rem;
   position: absolute;
+
+  @include bp-md {
+    width: auto;
+  }
 }
 .decorate-left {
-  right: 0;
+  top: 0;
+  left: 0;
+
   @include bp-md {
     left: 0;
     top: 0;
@@ -82,10 +89,14 @@
 
 .advantages__content-title {
   font-weight: var(--font-bold);
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 2.4rem;
   margin-bottom: 1.5rem;
   position: relative;
+
+  @include bp-md {
+    font-size: 2rem;
+  }
 }
 .advantages__content-description {
   line-height: 170%;

@@ -23,6 +23,8 @@ if (navToggle) {
 //     bodyFixed.classList.toggle('body-fixed');
 // };
 
+let currentYear = getElementById("currentYear");
+
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if (navClose) {

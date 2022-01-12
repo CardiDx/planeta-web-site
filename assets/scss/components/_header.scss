@@ -6,6 +6,7 @@
   top: 8rem;
   left: 0;
   z-index: var(--z-fixed);
+  transition: top 0.275s;
 }
 
 /*=============== NAV ===============*/
@@ -138,18 +139,11 @@
   border-radius: 1000px;
   background: #333333;
   display: block;
+  transition: all 0.275s ease-in-out;
 
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.nav__close {
-  font-size: 1.8rem;
-  position: absolute;
-  top: 0.5rem;
-  right: 0.7rem;
-  cursor: pointer;
 }
 
 /* Show menu */
@@ -159,7 +153,10 @@
 
 /* Change background header */
 .scroll-header {
-  background: var(--container-color);
+  background-color: rgba(245, 245, 252, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  top: 0;
 }
 
 /* Active link */
@@ -191,17 +188,16 @@
 // Close icon burger
 .nav__toggle.mobile span {
   background-color: var(--text-color);
+  transition: all 0.375s ease-in-out;
 }
 
 .nav__toggle.mobile span:first-child {
   transform: rotate(45deg) translate(8px, 5px);
-  transition: all 0.375s ease-in-out;
 }
 
 .nav__toggle.mobile span:nth-child(2) {
   width: 30px;
   transform: rotate(-45deg) translate(4px, -3px);
-  transition: all 0.375s ease-in-out;
   margin: 6px 0 0;
 }
 
@@ -214,3 +210,9 @@
   height: 100%;
   overflow: hidden !important;
 }
+
+// @media screen and (min-width: 767px) {
+//   .nav__list-item {
+//     flex-direction: row;
+//   }
+// }
