@@ -32,7 +32,7 @@
   padding: 0;
 
   @include bp-md {
-    padding: 7rem 0 10.4rem 0;
+    padding: 7rem 8rem 10.4rem 0;
   }
 }
 
@@ -41,6 +41,7 @@
 }
 
 .info__description {
+  font-weight: var(--font-medium);
   line-height: 190%;
   letter-spacing: 0.005em;
 }
@@ -54,7 +55,7 @@
   background-repeat: no-repeat;
 
   @include bp-md {
-    width: 100%;
+    width: 50%;
     height: 100%;
     position: absolute;
     right: 0;
@@ -75,6 +76,7 @@
   @include bp-md {
     width: 6rem;
     height: 6rem;
+    line-height: 6rem;
   }
 }
 

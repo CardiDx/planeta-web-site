@@ -1,20 +1,42 @@
 .footer {
-  padding: 9rem 0 4rem 0;
+  padding: 3.2rem 0 4rem 0;
   background-color: #09727d;
+  position: relative;
+
+  @include bp-sm {
+    padding: 9rem 0 4rem 0;
+  }
 }
 
 .footer__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 12rem;
+  padding-bottom: 6rem;
+
+  @include bp-sm {
+    padding-bottom: 12rem;
+  }
 }
 
 .footer__content {
   display: none;
 
-  @include bp-sm {
+  @include bp-md {
     display: block;
+  }
+
+  &--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @include bp-md {
+      display: block;
+      width: auto;
+    }
   }
 }
 
@@ -32,7 +54,11 @@
   font-size: 2rem;
   font-weight: bold;
   color: var(--white);
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
+
+  @include bp-sm {
+    margin-bottom: 3.2rem;
+  }
 }
 
 .footer__wrapper-links {

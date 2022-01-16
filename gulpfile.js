@@ -39,8 +39,6 @@ function images() {
 function scripts() {
   return src([
     "node_modules/jquery/dist/jquery.js",
-    // 'node_modules/slick-carousel/slick/slick.min.js',
-    "node_modules/magnific-popup/dist/jquery.magnific-popup.js",
     //'node_modules/aos/dist/aos.js',
     //'app/libs/textillate-master/jquery.textillate.js',
     //'app/libs/textillate-master/assets/jquery.lettering.js',
@@ -78,7 +76,7 @@ function build() {
       "assets/*.html",
     ],
     { base: "assets" }
-  ).pipe(dest("dist"));
+  ).pipe(dest("assets"));
 }
 
 function watching() {

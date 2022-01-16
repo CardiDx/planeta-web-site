@@ -3,7 +3,7 @@
 .about-me {
   padding-top: 4rem;
 
-  @include bp-md {
+  @include bp-sm {
     padding: 6rem 0;
   }
 }
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
 
-  @include bp-md {
+  @include bp-sm {
     flex-direction: row;
   }
 }
@@ -22,16 +22,21 @@
   flex-direction: column;
   align-items: center;
 
-  @include bp-md {
+  @include bp-sm {
     flex-direction: row-reverse;
+    align-items: flex-start;
     padding: 6rem 0 5rem 0;
+  }
+
+  @include bp-md {
+    align-items: center;
   }
 }
 
 .about__image-wrapper {
   width: 100%;
 
-  @include bp-md {
+  @include bp-sm {
     width: 50%;
   }
 }
@@ -50,7 +55,7 @@
   font-size: 1.8rem;
   line-height: 190%;
 
-  @include bp-md {
+  @include bp-sm {
     padding: 7rem 9.5rem 7rem 6rem;
     width: 50%;
   }
@@ -59,7 +64,7 @@
 .about__title {
   margin-bottom: 1.6rem;
 
-  @include bp-md {
+  @include bp-sm {
     margin-bottom: 4rem;
   }
 }
@@ -70,7 +75,7 @@
 }
 
 .about-me__content-text {
-  @include bp-md {
+  @include bp-sm {
     max-width: 50%;
     margin-left: 6rem;
   }
@@ -78,7 +83,7 @@
 
 .about-me__text {
   max-width: 24rem;
-  @include bp-md {
+  @include bp-sm {
     max-width: 100%;
   }
 }
@@ -95,7 +100,7 @@
 }
 
 .about-me__industry {
-  margin-bottom: 1rem;
+  margin-bottom: 3.2rem;
   font-size: 1.3rem;
   line-height: 155%;
   color: var(--accent-text);
@@ -107,7 +112,16 @@
 .about-me__message {
   line-height: 190%;
   margin-bottom: 2rem;
-  @include bp-md {
+
+  p {
+    margin-bottom: 0.6rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include bp-sm {
     margin-bottom: 5rem;
   }
 }
@@ -115,7 +129,7 @@
 .about-me__wrapper-image {
   max-width: 21rem;
   margin: 2.4rem 0 3rem 0;
-  @include bp-md {
+  @include bp-sm {
     max-width: 50%;
     margin: 0;
   }

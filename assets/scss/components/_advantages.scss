@@ -33,10 +33,14 @@
   }
 }
 .advantages__content {
-  margin-bottom: 4.6rem;
+  margin-bottom: 2rem;
   color: var(--text-color);
   position: relative;
   padding-left: 1.6rem;
+
+  @include bp-md {
+    margin-bottom: 4.6rem;
+  }
 }
 
 .advantages__content-title:before {
@@ -81,7 +85,12 @@
 }
 
 .advantages__title {
-  margin-bottom: 4rem;
+  margin-bottom: 2.4rem;
+
+  @include bp-sm {
+    margin-bottom: 4rem;
+  }
+
   @include bp-md {
     margin-bottom: 8rem;
   }
@@ -91,7 +100,7 @@
   font-weight: var(--font-bold);
   font-size: 1.2rem;
   line-height: 2.4rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
   position: relative;
 
   @include bp-md {

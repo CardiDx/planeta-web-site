@@ -12,17 +12,6 @@ if (navToggle) {
   });
 }
 
-//Mobile Navigation
-// var headerMenu = document.querySelector('.menu');
-// var mobileMenu = document.querySelector('.menu-burger');
-// var bodyFixed = document.body;
-
-// mobileMenu.onclick = function () {
-//     headerMenu.classList.toggle('open');
-//     mobileMenu.classList.toggle('mobile');
-//     bodyFixed.classList.toggle('body-fixed');
-// };
-
 let currentYear = getElementById("currentYear");
 
 /*===== MENU HIDDEN =====*/
@@ -34,25 +23,14 @@ if (navClose) {
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll(".nav__item-link");
+// const navLink = document.querySelectorAll(".nav__item-link");
 
-function linkAction() {
-  const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav__item-link, we remove the show-menu class
-  navMenu.classList.remove("show-menu");
-}
-navLink.forEach((n) => n.addEventListener("click", linkAction));
-
-/*=============== HOME SWIPER ===============*/
-let homeSwiper = new Swiper(".home-swiper", {
-  spaceBetween: 30,
-  loop: "true",
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+// function linkAction() {
+//   const navMenu = document.getElementById("nav-menu");
+//   // When we click on each nav__item-link, we remove the show-menu class
+//   navMenu.classList.remove("show-menu");
+// }
+// navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
@@ -119,3 +97,13 @@ sr.reveal(`.category__data, .trick__content, .footer__content`, {
 });
 sr.reveal(`.about__data, .discount__img`, { origin: "left" });
 sr.reveal(`.about__img, .discount__data`, { origin: "right" });
+
+$(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
+  disableOn: 700,
+  type: "iframe",
+  mainClass: "mfp-fade",
+  removalDelay: 160,
+  preloader: false,
+
+  fixedContentPos: false,
+});

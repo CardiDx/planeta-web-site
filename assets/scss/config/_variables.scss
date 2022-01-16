@@ -1,6 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap");
+@import "_mixins";
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -26,11 +27,12 @@
   --h2-font-size: 1.6rem;
   --h3-font-size: 1.6rem;
   --normal-font-size: 1.2rem;
+  --action-font-size: 1.6rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
   // Desktop typography
-  @media screen and (min-width: 992px) {
+  @include bp-md {
     --biggest-font-size: 6rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 3.5rem;
