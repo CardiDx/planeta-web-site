@@ -1,0 +1,15 @@
+.article {
+  line-height: 190%;
+
+  p {
+    margin: 1.6rem 0;
+  }
+
+  ol {
+    list-style-position: inside;
+  }
+}
+.article__inner {
+  max-width: 80rem;
+  margin: 0 auto;
+}
