@@ -14,7 +14,8 @@ if (navToggle) {
   });
 }
 
-// let currentYear = getElementById("currentYear");
+let currentYear = new Date().getFullYear();
+$("#currentYear").text(currentYear);
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
